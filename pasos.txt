@@ -5,3 +5,4 @@
 5. Dentro de src creamos un archivo index.js    //Para probar que todo esta funcionando
 6. Nos ubicamos en package.json y en "SCRIPT":{ "start": "node src/index.js" }    
 7. En el terminal ejecutamos el comando que esta dentro de las llaves     node src/index.js
+8. npm i @babel/core @babel/cli @babel/node @babel/preset-env nodemon -D
