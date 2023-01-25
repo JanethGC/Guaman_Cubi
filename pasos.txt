@@ -1,0 +1,7 @@
+1. Creamos la carpeta con el nombre del proyecto
+2. Abrimos la terminal y ejecutamos el comando :  npm init -y  //Inicializa nuestro proyecto en node
+3. npm i express bcryptjs cors dotenv jsonwebtoken mongoose morgan helmet 
+4. Creamos carpeta SRC dentro de products-api-company
+5. Dentro de src creamos un archivo index.js    //Para probar que todo esta funcionando
+6. Nos ubicamos en package.json y en "SCRIPT":{ "start": "node src/index.js" }    
+7. En el terminal ejecutamos el comando que esta dentro de las llaves     node src/index.js
