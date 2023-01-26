@@ -4,5 +4,23 @@
 4. Creamos carpeta SRC dentro de products-api-company
 5. Dentro de src creamos un archivo index.js    //Para probar que todo esta funcionando
 6. Nos ubicamos en package.json y en "SCRIPT":{ "start": "node src/index.js" }    
-7. En el terminal ejecutamos el comando que esta dentro de las llaves     node src/index.js
+7. node src/index.js
 8. npm i @babel/core @babel/cli @babel/node @babel/preset-env nodemon -D
+9. Se crea en tres lineas un servidor muy sencillo
+10. Se cambia en el package. json el scrpits
+11. Se crea un archivo .babelrc y escribimos los comando para poder usar babel-node
+12.npm start
+13. el servidor se levanta pero no se mantiene en escucha
+14. Se aplica un listen en index.js
+15. babel src/index.js --out-dir build  //esto en el package.json permite crear una carpeta con el nombre build
+16. consola --> npm run build   //esa crapeta tiene el codigo de produccion
+        //Usamos este comando para convertir el codigo  npm run build
+        //Usamos este comando para  tenerlo en produccion el codigo npm run start
+        //Usamos este comando para desarrollar el codigo  npm run dev
+                mkdir nombrecarpeta1 nombrecarpeta2  //sirve para crear carpetas
+                cd ..  //para subir un directorio
+                cls    //para limpiar la consola
+        //index.js sirve para arrancar la aplicacion
+        //app.js para configurar la aplicacion de express
+
+
