@@ -1,5 +1,5 @@
 1. Creamos la carpeta con el nombre del proyecto
-2. Abrimos la terminal y ejecutamos el comando :  npm init -y  //Inicializa nuestro proyecto en node
+2. Abrimos la terminal y ejecutamos el comando:  npm init -y  //Inicializa nuestro proyecto en node
 3. npm i express bcryptjs cors dotenv jsonwebtoken mongoose morgan helmet 
 4. Creamos carpeta SRC dentro de products-api-company
 5. Dentro de src creamos un archivo index.js    //Para probar que todo esta funcionando
@@ -22,5 +22,16 @@
                 cls    //para limpiar la consola
         //index.js sirve para arrancar la aplicacion
         //app.js para configurar la aplicacion de express
+17. En la carpeta routes creamos tres archivos   auth.routes.js  products.routes.js  user.routes.js
+18. En los tres va lo siguiente:
+        import { Router } from "express";
+
+        const router = Router()
+
+        export default router;
+
+        //Nos permitira crear las rutas para cada uno
+
+
 
 

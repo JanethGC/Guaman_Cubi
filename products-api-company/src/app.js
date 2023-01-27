@@ -4,6 +4,8 @@ import pkg from '../package.json'
 
 const app = express()   //Esto nos permite crear rutas
 
+import productsRoutes from './routes/products.routes'
+
 app.set('pkg',pkg);
 
 app.use(morgan('dev'));
@@ -16,6 +18,9 @@ app.get('/',(req,res)=>{
         version:app.get('pkg').version
     })
 })
+
+
+app.use('/products',productsRoutes)
 
 export default app;
 
