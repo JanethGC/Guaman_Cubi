@@ -12,9 +12,10 @@ export const createProduct = async (req,res) =>
     
 }
 
-export const getProducts = (req,res) =>
+export const getProducts = async (req,res) =>
 {
-    res.json("get products")
+    const products = await Product.find();
+    res.json(products)
 }
 
 export const getProductById = (req,res) =>
