@@ -30,7 +30,7 @@ userSchema.statics.encryptPassword = async (password)=>{
 
 }
 
-userSchema.methods.comparePassword = async (password, receivedPassword)=>{
+userSchema.statics.comparePassword = async (password, receivedPassword)=>{
     return await bcrypt.compare(password, receivedPassword)
 }
 
