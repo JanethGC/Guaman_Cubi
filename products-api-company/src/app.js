@@ -5,6 +5,8 @@ import pkg from '../package.json'
 const app = express()   //Esto nos permite crear rutas
 
 import productsRoutes from './routes/products.routes'
+import authRoutes from './routes/auth.routes'
+
 
 app.set('pkg',pkg);
 
@@ -23,7 +25,8 @@ app.get('/',(req,res)=>{
 })
 
 
-app.use('/products',productsRoutes)
+app.use('/api/products',productsRoutes)
+app.use('/api/auth',authRoutes)
 
 export default app;
 
