@@ -3,15 +3,17 @@ const router = Router()
 
 import * as productCtrl from '../controllers/products.controller'
 
-router.post('/',productCtrl.createProduct)
+import { verifyToken } from '../middlewares'
+
+router.post('/', verifyToken ,productCtrl.createProduct)
 
 router.get('/',productCtrl.getProducts)    //Al especificar la ruta con /products podremos obtener su metodo get
 
 router.get('/:productId',productCtrl.getProductById)
 
-router.put('/:productId',productCtrl.updateProductById)
+router.put('/:productId',verifyToken,productCtrl.updateProductById)
 
-router.delete('/:productId',productCtrl.deleteProductById)
+router.delete('/:productId',verifyToken,productCtrl.deleteProductById)
 
 export default router;
 

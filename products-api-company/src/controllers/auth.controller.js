@@ -41,7 +41,7 @@ export const signin = async (req, res) => {
 
     const matchPassword = await User.comparePassword(req.body.password, userFound.password)
 
-    console.log('matchPassword  : '+matchPassword)
+    console.log('matchPassword  :' + matchPassword)
 
     if (!matchPassword) return res.status(401).json({token: null, message: "Invalid Password"})
 
